@@ -1,14 +1,16 @@
-import { Button, DatePicker, Space, version } from "antd";
+import {Layout} from "antd";
+const { Header, Footer, Sider, Content } = Layout;
 
 function HomePage() {
     return (
-        <div >
-            <h1 class="text-3xl font-bold underline">antd version: {version}</h1>
-            <Space>
-                <DatePicker />
-                <Button type="primary">Primary Button</Button>
-            </Space>
-        </div>
+        <Layout>
+            <Header>Header</Header>
+            <Layout>
+                <Sider>Sider</Sider>
+                <Content>Content</Content>
+            </Layout>
+            <Footer>Footer</Footer>
+        </Layout>
     )
 }
 
