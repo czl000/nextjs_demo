@@ -1,5 +1,15 @@
+import { Button, DatePicker, Space, version } from "antd";
+
 function HomePage() {
-    return <div>Welcome to Next.js!1s</div>
-  }
-  
-  export default HomePage
+    return (
+        <div >
+            <h1>antd version: {version}</h1>
+            <Space>
+                <DatePicker />
+                <Button type="primary">Primary Button</Button>
+            </Space>
+        </div>
+    )
+}
+
+export default HomePage
