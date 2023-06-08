@@ -1,6 +1,6 @@
 // components/Header.tsx
 
-import React from 'react';
+import React from "react";
 
 interface HeaderProps {
   title: string;
@@ -10,7 +10,19 @@ interface HeaderProps {
 function Header({ title, menuItems }: HeaderProps) {
   return (
     <header>
-      <h1>333</h1>
+      <div className="text-center">
+        <button className="h-10 w-10 p-2 m-2 rounded bg-indigo-700  font-semibold text-white  transform  hover:bg-red-800 duration-300  hover:scale-125">
+          1
+        </button>
+        <button className="h-10 w-10 p-2 m-2 rounded bg-indigo-700  font-semibold text-white  transform  hover:ring hover:bg-red-800 duration-300 hover:rotate-45">
+          2
+        </button>
+        <button className="h-10 w-10 p-2 m-2 rounded bg-indigo-700  font-semibold text-white hover:ring   focus:invisible    hover:bg-red-800 duration-300   ">
+          3
+        </button>
+
+      </div>
+
       <nav>
         <ul>
           {menuItems.map((item, index) => (
