@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    babel: {
-        plugins: [
-          ['import', { libraryName: 'antd', style: true }]
-        ]
-      }
-}
+  babel: {
+    plugins: [],
+  },
+};
 
-module.exports = nextConfig
-
-
+module.exports = nextConfig;
